@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["dev@howaboutwe.com"]
   s.homepage    = "http://wwww.github.com/howaboutwe/pixelator"
   s.summary     = "Add tracking pixels to your code in a manageable, performant way"
-  s.description = "TODO: Description of Pixelator."
+  s.description = "Add tracking pixels to your code in a manageable, performant way"
   s.licenses = ["MIT"]
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.markdown"]
