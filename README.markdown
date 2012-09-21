@@ -14,7 +14,7 @@ asyncronously add tracking pixels (and other bits of html) to your code.
 
 ### Install the gem
 
-`gem 'pixelator', :git => git@github.com:rmw/pixelator.git`
+`gem 'pixelator', :git => git@github.com:howaboutwe/pixelator.git`
 
 ### Run the generator
 
@@ -89,15 +89,22 @@ or
 
 ## TODO
 
+* Added documentation about head pixels
+* JS Pixel data - should not include head and should be on Pixelator obj
+* JS flag for turning on/off
+* Turn off but still log each pixel that would be run
+* run can take an array
+
 * change partner to scope
-* pixelator/data.js should just add data to Pixelator
 * explain partner/scope
 * Add Travis CI
-* Explain context
+* Add documentation about context
 
 ## Maintainers
 
 Created by the HowAboutWe.com dev team.
+
+* [How About We](http://www.howaboutwe.com)
 
 * [Rebecca Miller-Webster](http://www.github.com/rmw), HowAboutWe.com
 * [Marco Carag](http://www.github.com/jazzcrazed), HowAboutWe.com
