@@ -9,6 +9,11 @@ describe 'home/index' do
     rendered.should include('<script src="/pixelator/data.js" type="text/javascript"></script>')
   end
 
+  it "should include pixelator_head" do
+    render template: 'home/index', layout: "layouts/application"
+    rendered.should include('var _gaq')
+  end
+
   context "Pixelator is on" do
      before do
        Pixelator.run_envs << 'test'

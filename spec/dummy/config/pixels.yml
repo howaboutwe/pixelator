@@ -28,7 +28,17 @@ all:
     type: javascript
     snippet: |
       <script type="text/javascript">
-      console.log('I am a tracking pixel');
+      console.log('I am a tracking pixel for ALL');
+      var div = document.createElement('div');
+      div.innerHTML('hello');
+      div.id = "testPixel";
+      </script>
+landing:
+  - name: landing_tracking_pixel
+    type: javascript
+    snippet: |
+      <script type="text/javascript">
+      console.log('I am a tracking pixel for LANDING');
       var div = document.createElement('div');
       div.innerHTML('hello');
       div.id = "testPixel";
