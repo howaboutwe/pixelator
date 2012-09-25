@@ -70,7 +70,10 @@ optionally, you can include a 'partner'
 #### Layout/Views
 In the head of your layout, add:
 
-`<%= javascript_include_tag "/pixelator/data" %>`
+```
+    = javascript_include_tag "/pixelator/data"
+    = render partial: 'shared/pixelator_head'
+```
 
 In the bottom of your layout, add:
 
@@ -78,7 +81,11 @@ In the bottom of your layout, add:
 
 To add the Pixelator to different page, such as landing, do:
 
-`= render partial: 'shared/pixelator', pixel_types: ['all']`
+`= render partial: 'shared/pixelator', pixel_types: ['landing']`
+If using the partial, you could also set the pixel types in the
+controller with
+`@pixel_types = ['stuff']`
+*Note: this will **always** add 'all' to the array
 or
 ```
     var pixelator = new Pixelator(PIXEL_DATA, '#{@scope}');
