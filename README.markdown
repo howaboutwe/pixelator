@@ -96,7 +96,8 @@ or
 
 ## TODO
 
-* Added documentation about head pixels
+* Expand example of how to set pixel context in controller and use in pixels.yml with ERB syntax.
+* Add documentation about head pixels
 * JS Pixel data - should not include head and should be on Pixelator obj
 * JS flag for turning on/off
 * Turn off but still log each pixel that would be run
