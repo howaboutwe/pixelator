@@ -11,8 +11,11 @@ Pixelator.prototype = {
   },
   picker: function(key, options) {
     var self = this;
-    _.each(this.data.pixels[key], function(pixel) {
+    var keys = self.data.pixels[key];
 
+    if (!keys) { return; }
+
+    _.each(keys, function(pixel) {
       if (pixel.partner && self.partner !== pixel.partner) {
         return;
       }
